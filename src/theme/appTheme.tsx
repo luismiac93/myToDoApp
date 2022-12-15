@@ -1,0 +1,41 @@
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
+  createTaskButton: {
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'whitesmoke',
+    marginBottom: 20,
+    borderRadius: 50,
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+    shadowColor: '#19196F',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  createTaskButtonFlat: {
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'whitesmoke',
+    marginBottom: 20,
+    borderRadius: 50,
+    shadowColor: '#19196F',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  title: {
+    color: 'whitesmoke',
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginLeft: 10,
+  },
+});
