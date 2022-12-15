@@ -31,9 +31,13 @@ export const TaskProvider = ({children}: Props) => {
     dispatch({type: 'markCompletedTask', payload: idTask});
   };
 
+  const orderBy = (typeOrderBy: string) => {
+    dispatch({type: 'orderBy', payload: typeOrderBy});
+  };
+
   return (
     <TaskContext.Provider
-      value={{...state, createTask, deleteTask, completedTask}}>
+      value={{...state, createTask, deleteTask, completedTask, orderBy}}>
       {children}
     </TaskContext.Provider>
   );

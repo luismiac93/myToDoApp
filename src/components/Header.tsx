@@ -6,7 +6,7 @@ import {wereCompleted} from '../helpers';
 import {styles} from '../theme/appTheme';
 
 export const Header = () => {
-  const {tasks} = useContext(TaskContext);
+  const {tasks, orderBy} = useContext(TaskContext);
   return (
     <View>
       <View
@@ -39,13 +39,19 @@ export const Header = () => {
             marginBottom: 10,
             justifyContent: 'space-around',
           }}>
-          <TouchableOpacity onPress={() => {}}>
+          <TouchableOpacity
+            onPress={() => {
+              orderBy('name');
+            }}>
             <View style={{flexDirection: 'row', marginRight: 10}}>
               <Icon name="filter-outline" color={'whitesmoke'} size={18} />
               <Text style={styles.subTitleFilters}>By name</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => {}}>
+          <TouchableOpacity
+            onPress={() => {
+              orderBy('priority');
+            }}>
             <View style={{flexDirection: 'row'}}>
               <Icon name="filter-outline" color={'whitesmoke'} size={18} />
               <Text style={styles.subTitleFilters}>By priority</Text>

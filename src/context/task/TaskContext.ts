@@ -6,6 +6,7 @@ export interface TaskContextProps {
   createTask: (task: Task) => void;
   deleteTask: (idTask: string) => void;
   completedTask: (idTask: string) => void;
+  orderBy: (idTask: string) => void;
 }
 
 export const TaskContext = createContext({} as TaskContextProps);
