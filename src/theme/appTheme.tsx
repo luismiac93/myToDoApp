@@ -38,4 +38,25 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     marginLeft: 10,
   },
+  subTitle: {
+    color: 'whitesmoke',
+    fontWeight: '600',
+    fontSize: 16,
+    marginLeft: 10,
+  },
+  subTitleFilters: {
+    color: 'whitesmoke',
+    fontWeight: '300',
+    fontSize: 14,
+    marginLeft: 10,
+  },
+  dropdownCustom: {
+    backgroundColor: 'white',
+    shadowColor: 'rgba(0, 0, 0, 0.2)',
+    shadowOffset: {height: 0, width: 10},
+    width: 250,
+    padding: 5,
+    borderRadius: 5,
+    marginBottom: 10,
+  },
 });
